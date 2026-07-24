@@ -91,6 +91,56 @@ export const appProjects: AppProject[] = [
         "Calculator does not knowingly collect personal information from anyone, including children under the age of 13, because it does not collect personal information from any user, regardless of age.",
     },
   },
+  {
+    slug: "flashlight",
+    name: "Flashlight",
+    tagline: "Instant torch control, built with Jetpack Compose.",
+    summary:
+      "A simple Android flashlight app built entirely with Jetpack Compose to toggle the device torch on and off.",
+    description:
+      "Flashlight is an Android app built with Jetpack Compose that turns your device's torch on and off with a single tap. It does one job, does it offline, and asks for nothing in return.",
+    category: "Utility",
+    status: "In review",
+    year: "2026",
+    accent: "#f2a93b",
+    technologies: ["Kotlin", "Jetpack Compose", "Camera2", "MIT"],
+    highlights: [
+      "Turns the device torch on and off with a single tap",
+      "Built entirely with Jetpack Compose and Material 3",
+      "Uses the Camera2 API only to control the torch, never to capture images",
+      "No ads, analytics, internet connection, or runtime permission prompts",
+    ],
+    links: {
+      playStore:
+        "https://play.google.com/store/apps/details?id=com.thingsenz.flashlight",
+      source: "https://github.com/samarthsubramanya/Compose_Flashlight",
+    },
+    license: "MIT License",
+    privacy: {
+      lastUpdated: "July 23, 2026",
+      contactEmail: "thingsenz@gmail.com",
+      overview:
+        "Flashlight is a fully offline utility. It performs a single function — turning your device's torch on and off — and does not collect, store, or transmit any personal data. This policy describes, in full, our approach to your privacy: there is no data collection to disclose.",
+      dataCollected: [
+        "Flashlight does not collect any personal data, such as your name, email address, location, contacts, or device identifiers.",
+        "The app does not show a runtime permission dialog. It declares the FLASHLIGHT permission, which Android treats as a normal permission granted automatically at install time and does not request camera access of any kind.",
+        "No usage analytics, crash reports, or diagnostic data are collected.",
+        "Flashlight does not require or use an internet connection, so no data ever leaves your device.",
+      ],
+      dataUse: [
+        "Because no data is collected, none is used, shared, or sold for any purpose, including advertising, analytics, or profiling.",
+        "The Camera2 API is used only to switch the torch mode on and off; the app never opens a camera preview or captures images.",
+      ],
+      thirdParties: [
+        "Flashlight does not integrate with any third-party advertising, analytics, or tracking services.",
+        "No information is shared with third parties, as none is collected in the first place.",
+      ],
+      retention:
+        "Flashlight has no personal data to retain, store, or delete. The app holds no state beyond the current torch on/off value while it is open, and that value is discarded when the app is closed.",
+      children:
+        "Flashlight does not knowingly collect personal information from anyone, including children under the age of 13, because it does not collect personal information from any user, regardless of age.",
+    },
+  },
 ];
 
 export function getAppProject(slug: string) {

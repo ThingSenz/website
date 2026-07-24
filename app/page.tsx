@@ -18,8 +18,6 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const featured = appProjects[0];
-
   return (
     <main className="site-shell">
       <header className="glass-nav" aria-label="Primary navigation">
@@ -64,12 +62,12 @@ export default function Home() {
             <div className="device-top" />
             <div className="app-screen hero-screen">
               <div className="screen-header">
-                <span>{featured.name}</span>
-                <span>{featured.status}</span>
+                <span>ThingSenz</span>
+                <span>Android</span>
               </div>
               <div className="pulse-panel">
-                <span>{featured.category}</span>
-                <strong>{featured.tagline}</strong>
+                <span>Open source</span>
+                <strong>Small apps, done properly.</strong>
               </div>
               <div className="screen-grid">
                 <span />
@@ -113,7 +111,6 @@ export default function Home() {
               <div className="card-content">
                 <div className="card-kicker">
                   <span>{project.category}</span>
-                  <span>{project.status}</span>
                 </div>
                 <h3>{project.name}</h3>
                 <p>{project.summary}</p>
